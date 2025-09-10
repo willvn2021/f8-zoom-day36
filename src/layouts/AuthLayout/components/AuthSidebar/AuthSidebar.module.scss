@@ -1,8 +1,8 @@
 .sidebar {
     width: 240px;
-    background-color: #f8f9fa;
+    background-color: var(--page-bg);
     padding: 20px;
-    border-right: 1px solid #e9ecef;
+    border-right: 1px solid #e0e7ff;
     flex-shrink: 0;
 }
 
@@ -19,19 +19,19 @@
 .navLink {
     display: block;
     padding: 10px 15px;
-    color: #495057;
+    color: var(--muted);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: var(--radius, 8px);
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
     &:hover {
-        background-color: #e9ecef;
-        color: #007bff;
+        background-color: color-mix(in srgb, var(--brand) 8%, transparent);
+        color: var(--brand);
     }
 }
 
 .active {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--brand);
+    color: var(--card-bg);
     font-weight: bold;
 }

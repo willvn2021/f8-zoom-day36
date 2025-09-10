@@ -1,0 +1,33 @@
+.wrapper {
+    background-color: var(--card-bg);
+    padding: 2.5rem 3rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.title {
+    color: var(--brand);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e7ff; // Consider adding --border-color variable
+    padding-bottom: 1rem;
+}
+
+.content {
+    font-size: 1.1rem;
+    color: #334155; // Consider adding --text-normal variable
+    line-height: 1.8;
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -7,21 +7,31 @@ import About from "../../pages/About";
 import Posts from "../../pages/Posts";
 import Login from "../../pages/Login";
 import Register from "../../pages/Register";
+import Contact from "../../pages/Contact";
+import Privacy from "../../pages/Privacy";
 import NotFound from "../../pages/NotFound";
 
 // Layouts
 import DefaultLayout from "../../layouts/DefaultLayout";
 import AuthLayout from "../../layouts/AuthLayout";
 import AdminLayout from "../../layouts/AdminLayout";
+import PostDetail from "../../pages/PostDetail";
+
+// Components
+import ScrollToTop from "../../components/ScrollToTop";
 
 function AppRoutes() {
     return (
         <HashRouter>
+            <ScrollToTop />
             <Routes>
                 <Route element={<DefaultLayout />}>
                     <Route index element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/posts" element={<Posts />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/privacy" element={<Privacy />} />
+                    <Route path="/PostDetail/:id" element={<PostDetail />} />
                 </Route>
 
                 <Route element={<AuthLayout />}>

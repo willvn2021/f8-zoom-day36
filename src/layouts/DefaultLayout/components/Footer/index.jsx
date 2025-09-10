@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import styles from "./Footer.module.scss";
 
 function Footer() {
@@ -10,9 +11,8 @@ function Footer() {
                         reserved.
                     </p>
                     <nav className={styles.nav}>
-                        <a href="/">Privacy Policy</a>
-                        <a href="/">Terms of Service</a>
-                        <a href="/">Contact</a>
+                        <Link to={"/privacy"}>Privacy Policy</Link>
+                        <Link to={"/contact"}>Contact</Link>
                     </nav>
                 </div>
             </div>
